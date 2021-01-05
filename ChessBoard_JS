@@ -1,1 +1,25 @@
-
+var input = 8;
+function Chess_board(input){
+	for (var i=1;i<=input;i++){
+		for (var j=1;j<=input;j++){
+			if(i%2!=0){
+				//start from star
+				if(j%2!=0){
+					console.log("*")
+				}
+				else{
+					console.log("#")
+				}
+			}
+			else{
+				//start from hash
+				if(j%2!=0){
+					console.log("#")
+				}
+				else{
+					console.log("*")
+				}
+			}
+		}
+	}
+}
